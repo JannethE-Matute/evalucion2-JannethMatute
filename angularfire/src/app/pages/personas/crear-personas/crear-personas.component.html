@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+
+<p>Formulario para crear personas</p>
+
+<form>
+
+    <label for="txtCedula">Cédula</label>
+    <input id="txtCedula" name="txtCedula" [(ngModel)]="persona.cedula"/><br/>
+    <label for="txtNombre">Nombre</label>
+    <input id="txtNombre" name="txtNombre" [(ngModel)]="persona.nombre"/><br/>
+    <label for="txtFecha_nacimiento">Fecha_nacimiento</label>
+    <input id="txtFecha_nacimiento" name="txtFecha_nacimiento" [(ngModel)]="persona.fecha_nacimiento"/><br/>
+    <label for="txtNum_carga_familiar">Número_carga_familiar</label>
+    <input id="txtNum_carga_familiar" name="txtNum_carga_familiar" [(ngModel)]="persona.num_carga_familiar"/><br/>
+
+    <button (click)="guardar()">Guardar</button>
+
+</form>
+
+{{persona.nombre}}
+
+<button (click)="goListPersonas()">Listado de personas</button>

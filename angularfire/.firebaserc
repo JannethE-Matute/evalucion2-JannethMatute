@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "evaluacion2-jannethmatute": {
+      "hosting": {
+        "angularfire": [
+          "evaluacion2-jannethmatute"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "evaluacion2-jannethmatute"
+  }
+}

@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+
+<p>listar-personas works!</p>
+
+
+<table>
+    <tr>
+        <th>Cédula</th>
+        <th>Nombre</th>
+        <th>Fecha_nacimiento</th>
+        <th>Número_Carga_Familiar</th>
+    </tr>
+    <tr *ngFor="let p of personas | async">
+        <td>{{p.cedula}}</td>
+        <td>{{p.nombre}}</td>
+        <td>{{p.fecha_nacimiento}}</td>
+        <td>{{p.num_carga_familiar}}</td>      
+    </tr>
+
+</table>
+
+
+<button (click)="goNewPersona()">Nuevo persona</button>
+
